@@ -1,0 +1,16 @@
+*.py[co]
+.*.sw[po]
+.idea
+*.log
+*.sqlite3
+
+
+*.DS_Store
+dsrc-user/media/
+dsrc-manage/media/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+
