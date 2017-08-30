@@ -1,6 +1,8 @@
 # Create your models here.
 from django.db import models
 from .base import BaseModel
+from ckeditor.fields import RichTextField
+from ckeditor_uploader.fields import RichTextUploadingField
 
 class User(models.Model):
     name = models.CharField(max_length=30)
@@ -15,7 +17,7 @@ class User(models.Model):
 
 class Blog(BaseModel):
     article_name = models.CharField(max_length=100)
-    content = models.TextField()
+    content = RichTextField()
     release =models.BooleanField()
 
     def __unicode__(self):

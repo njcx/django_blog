@@ -7,4 +7,5 @@ urlpatterns = [
     url(r'^aboutme/?', AboutMe.as_view(), name='aboutme'),
     url(r'^listarticle/$', ListArticle.as_view(), name='list_article'),
     url(r'^contact/?', Contact.as_view(), name='contact'),
+    url(r'^ckeditor/', include('ckeditor_uploader.urls')),
 ]
